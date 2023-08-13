@@ -1,0 +1,1 @@
+import{U as o,S as t,V as a,N as s,D as r,W as u}from"./entry.4b723449.js";function n(){return o("token",()=>t("token"))}const f=s(),c=a((i,m)=>{const e=n();if(r(),!e.value)return f.toggleForm(),u({path:"/"})});export{c as default};
