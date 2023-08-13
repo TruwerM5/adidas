@@ -17,6 +17,7 @@
   "dependencies": {
     "@braid/vue-formulate": "^2.5.3",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@nuxtjs/vercel-builder": "^0.24.0",
     "@pinia/nuxt": "^0.4.7",
     "bcrypt": "^5.1.0",
     "jsonwebtoken": "^9.0.0",
