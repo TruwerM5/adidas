@@ -35,8 +35,5 @@ export default defineNuxtConfig({
     runtimeConfig: {
       mongodbUri: process.env.MONGODB_URI,
       tokenSecret: process.env.TokenSecret,
-    },
-    buildModules: [
-      '@braid/vue-formulate/nuxt'
-    ]
+    }
 })

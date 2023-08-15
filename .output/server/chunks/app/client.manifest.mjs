@@ -9,21 +9,21 @@ const client_manifest = {
     "file": "ProductItem.f74d0488.css",
     "src": "ProductItem.css"
   },
-  "_AddToWishlistBtn.57f58a00.js": {
+  "_AddToWishlistBtn.a39f7741.js": {
     "resourceType": "script",
     "module": true,
-    "file": "AddToWishlistBtn.57f58a00.js",
+    "file": "AddToWishlistBtn.a39f7741.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_Loading.2fdba726.js": {
+  "_Loading.432678a1.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "Loading.397bfd7d.css"
     ],
-    "file": "Loading.2fdba726.js",
+    "file": "Loading.432678a1.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -32,15 +32,15 @@ const client_manifest = {
     "file": "Loading.397bfd7d.css",
     "resourceType": "style"
   },
-  "_ProductItem.d0855544.js": {
+  "_ProductItem.ef79e4d2.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "ProductItem.f74d0488.css"
     ],
-    "file": "ProductItem.d0855544.js",
+    "file": "ProductItem.ef79e4d2.js",
     "imports": [
-      "_AddToWishlistBtn.57f58a00.js",
+      "_AddToWishlistBtn.a39f7741.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -48,13 +48,13 @@ const client_manifest = {
     "file": "ProductItem.f74d0488.css",
     "resourceType": "style"
   },
-  "_joinclub.e8db591c.js": {
+  "_joinclub.9ddab54a.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "joinclub.ca3395f7.css"
     ],
-    "file": "joinclub.e8db591c.js",
+    "file": "joinclub.9ddab54a.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -63,15 +63,15 @@ const client_manifest = {
     "file": "joinclub.ca3395f7.css",
     "resourceType": "style"
   },
-  "_products.93358499.js": {
+  "_products.ab9b7185.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "products.a8792eb5.css"
     ],
-    "file": "products.93358499.js",
+    "file": "products.ab9b7185.js",
     "imports": [
-      "_ProductItem.d0855544.js",
+      "_ProductItem.ef79e4d2.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -111,7 +111,7 @@ const client_manifest = {
   "middleware/auth.js": {
     "resourceType": "script",
     "module": true,
-    "file": "auth.78b96b66.js",
+    "file": "auth.28479430.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -121,7 +121,7 @@ const client_manifest = {
   "middleware/notfound.js": {
     "resourceType": "script",
     "module": true,
-    "file": "notfound.da5a04e3.js",
+    "file": "notfound.7baddf21.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -130,26 +130,26 @@ const client_manifest = {
   },
   "node_modules/nuxt/dist/app/entry.css": {
     "resourceType": "style",
-    "file": "entry.1bd63e7f.css",
+    "file": "entry.ed9a3d5b.css",
     "src": "node_modules/nuxt/dist/app/entry.css"
   },
   "node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "css": [
-      "entry.1bd63e7f.css"
+      "entry.ed9a3d5b.css"
     ],
     "dynamicImports": [
       "middleware/auth.js",
       "middleware/notfound.js"
     ],
-    "file": "entry.9293db5a.js",
+    "file": "entry.39fbdc3e.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js",
     "_globalCSS": true
   },
-  "entry.1bd63e7f.css": {
-    "file": "entry.1bd63e7f.css",
+  "entry.ed9a3d5b.css": {
+    "file": "entry.ed9a3d5b.css",
     "resourceType": "style"
   },
   "pages/cart.css": {
@@ -161,9 +161,9 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "cart.49c78b4c.js",
+    "file": "cart.4f4d0bac.js",
     "imports": [
-      "_Loading.2fdba726.js",
+      "_Loading.432678a1.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -182,7 +182,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "checkout.c990fae2.js",
+    "file": "checkout.74e1430e.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -202,12 +202,12 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "_collection_.c05e5b8e.js",
+    "file": "_collection_.cf984739.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_products.93358499.js",
-      "_ProductItem.d0855544.js",
-      "_AddToWishlistBtn.57f58a00.js"
+      "_products.ab9b7185.js",
+      "_ProductItem.ef79e4d2.js",
+      "_AddToWishlistBtn.a39f7741.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/collection/[collection].vue"
@@ -225,12 +225,12 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "index.d379be24.js",
+    "file": "index.169bd520.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_ProductItem.d0855544.js",
-      "_joinclub.e8db591c.js",
-      "_AddToWishlistBtn.57f58a00.js"
+      "_ProductItem.ef79e4d2.js",
+      "_joinclub.9ddab54a.js",
+      "_AddToWishlistBtn.a39f7741.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
@@ -242,13 +242,13 @@ const client_manifest = {
   "pages/men.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "men.a430fd6f.js",
+    "file": "men.c49dfd80.js",
     "imports": [
-      "_Loading.2fdba726.js",
-      "_products.93358499.js",
+      "_Loading.432678a1.js",
+      "_products.ab9b7185.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_ProductItem.d0855544.js",
-      "_AddToWishlistBtn.57f58a00.js"
+      "_ProductItem.ef79e4d2.js",
+      "_AddToWishlistBtn.a39f7741.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/men.vue"
@@ -262,12 +262,12 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "_name_.892326e7.js",
+    "file": "_name_.cd22de64.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_products.93358499.js",
-      "_ProductItem.d0855544.js",
-      "_AddToWishlistBtn.57f58a00.js"
+      "_products.ab9b7185.js",
+      "_ProductItem.ef79e4d2.js",
+      "_AddToWishlistBtn.a39f7741.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/popular/[name].vue"
@@ -285,12 +285,12 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "_code_.fd2fbb84.js",
+    "file": "_code_.7f96b103.js",
     "imports": [
-      "_Loading.2fdba726.js",
+      "_Loading.432678a1.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_AddToWishlistBtn.57f58a00.js",
-      "_joinclub.e8db591c.js"
+      "_AddToWishlistBtn.a39f7741.js",
+      "_joinclub.9ddab54a.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/products/[code].vue"
@@ -302,12 +302,12 @@ const client_manifest = {
   "pages/wishlist.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "wishlist.7dfcd639.js",
+    "file": "wishlist.ef807266.js",
     "imports": [
-      "_products.93358499.js",
+      "_products.ab9b7185.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_ProductItem.d0855544.js",
-      "_AddToWishlistBtn.57f58a00.js"
+      "_ProductItem.ef79e4d2.js",
+      "_AddToWishlistBtn.a39f7741.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/wishlist.vue"
@@ -315,13 +315,13 @@ const client_manifest = {
   "pages/women.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "women.8c32026e.js",
+    "file": "women.0c3a96ea.js",
     "imports": [
-      "_Loading.2fdba726.js",
-      "_products.93358499.js",
+      "_Loading.432678a1.js",
+      "_products.ab9b7185.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_ProductItem.d0855544.js",
-      "_AddToWishlistBtn.57f58a00.js"
+      "_ProductItem.ef79e4d2.js",
+      "_AddToWishlistBtn.a39f7741.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/women.vue"

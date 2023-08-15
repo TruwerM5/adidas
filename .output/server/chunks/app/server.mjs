@@ -476,7 +476,7 @@ const globalMiddleware = [
   validate
 ];
 const namedMiddleware = {
-  auth: () => import('./_nuxt/auth-5129af27.mjs'),
+  auth: () => import('./_nuxt/auth-ff8585e8.mjs'),
   notfound: () => import('./_nuxt/notfound-c7371a00.mjs')
 };
 const plugin$1 = /* @__PURE__ */ defineNuxtPlugin({
@@ -2277,18 +2277,23 @@ const _sfc_main$5 = {
       if (!formStore.validateLogin(formStore.email)) {
         return;
       }
+      console.log(formStore.email);
       const headers = { "Content-Type": "application/json" };
-      await $fetch("/api/users", {
-        method: "POST",
-        body: formStore.email,
-        headers
-      }).then((res) => {
-        if (res.exists) {
-          formStore.currentForm = "login";
-        } else {
-          formStore.currentForm = "signup";
-        }
-      });
+      try {
+        await $fetch("/api/users/", {
+          method: "POST",
+          body: formStore.email,
+          headers
+        }).then((res) => {
+          if (res.exists) {
+            formStore.currentForm = "login";
+          } else {
+            formStore.currentForm = "signup";
+          }
+        });
+      } catch (error) {
+        console.log(error.message);
+      }
     }
     async function signUpProcess() {
       if (!formStore.validatePassword(formStore.password)) {
@@ -2322,11 +2327,11 @@ const _sfc_main$5 = {
     return (_ctx, _push, _parent, _attrs) => {
       const _component_PrimaryBtn = __nuxt_component_2$1;
       if (unref(formStore).isFormOpened) {
-        _push(`<div${ssrRenderAttrs(mergeProps({ class: "overlay" }, _attrs))} data-v-073102ad><form class="auth" data-v-073102ad><button class="auth__close-btn" type="button" data-v-073102ad><img${ssrRenderAttr("src", _imports_0$3)} alt="Close" data-v-073102ad></button><div class="auth__inner" data-v-073102ad>`);
+        _push(`<div${ssrRenderAttrs(mergeProps({ class: "overlay" }, _attrs))} data-v-a4c89b09><form class="auth" data-v-a4c89b09><button class="auth__close-btn" type="button" data-v-a4c89b09><img${ssrRenderAttr("src", _imports_0$3)} alt="Close" data-v-a4c89b09></button><div class="auth__inner" data-v-a4c89b09>`);
         if (unref(formStore).currentForm === "email") {
-          _push(`<!--[--><h3 class="auth__title" data-v-073102ad>YOUR ADICLUB BENEFITS AWAIT!</h3><span class="auth__text" data-v-073102ad> Get free shipping, discount vouchers and members only products when you’re in adiClub </span><h4 class="auth__subtitle" data-v-073102ad>LOG IN OR SIGN UP (IT&#39;S FREE)</h4><label for="email" class="auth__label" data-v-073102ad>Enter your email to access or create your account</label><div class="auth__input-group" data-v-073102ad><input type="email" name="email" class="auth__input"${ssrRenderAttr("value", unref(formStore).email)} data-v-073102ad><span class="${ssrRenderClass(["auth__input-label", { decreased: unref(formStore).email.length }])}" data-v-073102ad>Email</span>`);
+          _push(`<!--[--><h3 class="auth__title" data-v-a4c89b09>YOUR ADICLUB BENEFITS AWAIT!</h3><span class="auth__text" data-v-a4c89b09> Get free shipping, discount vouchers and members only products when you’re in adiClub </span><h4 class="auth__subtitle" data-v-a4c89b09>LOG IN OR SIGN UP (IT&#39;S FREE)</h4><label for="email" class="auth__label" data-v-a4c89b09>Enter your email to access or create your account</label><div class="auth__input-group" data-v-a4c89b09><input type="text" name="email" class="auth__input"${ssrRenderAttr("value", unref(formStore).email)} data-v-a4c89b09><span class="${ssrRenderClass(["auth__input-label", { decreased: unref(formStore).email.length }])}" data-v-a4c89b09>Email</span>`);
           if (unref(formStore).errorMsg.length) {
-            _push(`<span class="text-red-500 absolute top-full left-0" data-v-073102ad>${ssrInterpolate(unref(formStore).errorMsg)}</span>`);
+            _push(`<span class="text-red-500 absolute top-full left-0" data-v-a4c89b09>${ssrInterpolate(unref(formStore).errorMsg)}</span>`);
           } else {
             _push(`<!---->`);
           }
@@ -2341,9 +2346,9 @@ const _sfc_main$5 = {
           }, null, _parent));
           _push(`<!--]-->`);
         } else if (unref(formStore).currentForm === "signup") {
-          _push(`<!--[--><h3 class="auth__title" data-v-073102ad>WELCOME TO ADICLUB!</h3><span class="auth__text" data-v-073102ad> Create a password to have full access to adiClub benefits and be able to redeem points, save your shipping details and more. </span><label for="password" class="auth__label" data-v-073102ad>Enter your email to access or create your account</label><div class="auth__input-group" data-v-073102ad><input type="password" id="password" name="password" class="auth__input"${ssrRenderAttr("value", unref(formStore).password)} data-v-073102ad><span class="${ssrRenderClass(["auth__input-label", { decreased: unref(formStore).password.length }])}" data-v-073102ad>Password</span>`);
+          _push(`<!--[--><h3 class="auth__title" data-v-a4c89b09>WELCOME TO ADICLUB!</h3><span class="auth__text" data-v-a4c89b09> Create a password to have full access to adiClub benefits and be able to redeem points, save your shipping details and more. </span><label for="password" class="auth__label" data-v-a4c89b09>Enter your email to access or create your account</label><div class="auth__input-group" data-v-a4c89b09><input type="password" id="password" name="password" class="auth__input"${ssrRenderAttr("value", unref(formStore).password)} data-v-a4c89b09><span class="${ssrRenderClass(["auth__input-label", { decreased: unref(formStore).password.length }])}" data-v-a4c89b09>Password</span>`);
           if (unref(formStore).passwordErrorMsg.length) {
-            _push(`<span class="text-red-500 absolute top-full left-0" data-v-073102ad>${ssrInterpolate(unref(formStore).passwordErrorMsg)}</span>`);
+            _push(`<span class="text-red-500 absolute top-full left-0" data-v-a4c89b09>${ssrInterpolate(unref(formStore).passwordErrorMsg)}</span>`);
           } else {
             _push(`<!---->`);
           }
@@ -2358,9 +2363,9 @@ const _sfc_main$5 = {
           }, null, _parent));
           _push(`<!--]-->`);
         } else if (unref(formStore).currentForm === "login") {
-          _push(`<!--[--><h3 class="auth__title" data-v-073102ad>LOGIN TO ADICLUB</h3><span class="auth__text" data-v-073102ad> Get free shipping, discount vouchers and members only products when you’re in adiClub. </span><label for="password" class="auth__label" data-v-073102ad>Enter your email to access or create your account</label><div class="auth__input-group" data-v-073102ad><input type="password" id="password" name="password" class="auth__input"${ssrRenderAttr("value", unref(formStore).password)} data-v-073102ad><span class="${ssrRenderClass(["auth__input-label", { decreased: unref(formStore).password.length }])}" data-v-073102ad>Password</span>`);
+          _push(`<!--[--><h3 class="auth__title" data-v-a4c89b09>LOGIN TO ADICLUB</h3><span class="auth__text" data-v-a4c89b09> Get free shipping, discount vouchers and members only products when you’re in adiClub. </span><label for="password" class="auth__label" data-v-a4c89b09>Enter your email to access or create your account</label><div class="auth__input-group" data-v-a4c89b09><input type="password" id="password" name="password" class="auth__input"${ssrRenderAttr("value", unref(formStore).password)} data-v-a4c89b09><span class="${ssrRenderClass(["auth__input-label", { decreased: unref(formStore).password.length }])}" data-v-a4c89b09>Password</span>`);
           if (unref(formStore).passwordErrorMsg.length) {
-            _push(`<span class="text-red-500 absolute top-full left-0" data-v-073102ad>${ssrInterpolate(unref(formStore).passwordErrorMsg)}</span>`);
+            _push(`<span class="text-red-500 absolute top-full left-0" data-v-a4c89b09>${ssrInterpolate(unref(formStore).passwordErrorMsg)}</span>`);
           } else {
             _push(`<!---->`);
           }
@@ -2389,7 +2394,7 @@ _sfc_main$5.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Auth.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-073102ad"]]);
+const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-a4c89b09"]]);
 const _sfc_main$4 = {
   __name: "Logout",
   __ssrInlineRender: true,
@@ -2421,7 +2426,7 @@ _sfc_main$4.setup = (props, ctx) => {
 };
 const __nuxt_component_4 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-05c87fc2"]]);
 const _sfc_main$3 = {};
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
   _push(`<footer${ssrRenderAttrs(mergeProps({ class: "footer" }, _attrs))} data-v-4d9c01e2><p class="footer__text" data-v-4d9c01e2> ©2023 adidas America, Inc. </p></footer>`);
 }
 const _sfc_setup$3 = _sfc_main$3.setup;
@@ -2430,7 +2435,7 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/FooterVue.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-4d9c01e2"]]);
+const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-4d9c01e2"]]);
 const useGalleryStore = defineStore("gallery", {
   state: () => {
     return {
@@ -2522,44 +2527,39 @@ _sfc_main$2.setup = (props, ctx) => {
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
 const AppComponent = _sfc_main$2;
-const _sfc_main$1 = {
-  __name: "error",
-  __ssrInlineRender: true,
-  setup(__props) {
-    return (_ctx, _push, _parent, _attrs) => {
-      const _component_Body = Body;
-      const _component_HeaderVue = __nuxt_component_1;
-      const _component_FooterVue = __nuxt_component_2;
-      _push(ssrRenderComponent(_component_Body, _attrs, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(ssrRenderComponent(_component_HeaderVue, null, null, _parent2, _scopeId));
-            _push2(`<main class="main flex h-full"${_scopeId}><div class="wrapper flex items-center"${_scopeId}><h1 class="text-center uppercase text-[24px] font-bold font-adineue"${_scopeId}>Page not found</h1></div></main>`);
-            _push2(ssrRenderComponent(_component_FooterVue, null, null, _parent2, _scopeId));
-          } else {
-            return [
-              createVNode(_component_HeaderVue),
-              createVNode("main", { class: "main flex h-full" }, [
-                createVNode("div", { class: "wrapper flex items-center" }, [
-                  createVNode("h1", { class: "text-center uppercase text-[24px] font-bold font-adineue" }, "Page not found")
-                ])
-              ]),
-              createVNode(_component_FooterVue)
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-    };
-  }
-};
+const _sfc_main$1 = {};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  const _component_Body = Body;
+  const _component_HeaderVue = __nuxt_component_1;
+  const _component_FooterVue = __nuxt_component_2;
+  _push(ssrRenderComponent(_component_Body, _attrs, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_HeaderVue, null, null, _parent2, _scopeId));
+        _push2(`<main class="main flex h-full"${_scopeId}><div class="wrapper flex items-center"${_scopeId}><h1 class="text-center uppercase text-[24px] font-bold font-adineue"${_scopeId}>Page not found</h1></div></main>`);
+        _push2(ssrRenderComponent(_component_FooterVue, null, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_HeaderVue),
+          createVNode("main", { class: "main flex h-full" }, [
+            createVNode("div", { class: "wrapper flex items-center" }, [
+              createVNode("h1", { class: "text-center uppercase text-[24px] font-bold font-adineue" }, "Page not found")
+            ])
+          ]),
+          createVNode(_component_FooterVue)
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+}
 const _sfc_setup$1 = _sfc_main$1.setup;
 _sfc_main$1.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("error.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
-const ErrorComponent = _sfc_main$1;
+const ErrorComponent = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender]]);
 const _sfc_main = {
   __name: "nuxt-root",
   __ssrInlineRender: true,

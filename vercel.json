@@ -2,7 +2,12 @@
     "version": 2,
     "builds": [
         {
+<<<<<<< HEAD
             "src": "nuxt.config.ts"
+=======
+            "src": "nuxt.config.js",
+            "use": "@nuxtjs/vercel-builder"
+>>>>>>> parent of 41197dd (second commit)
         }
     ]
 }

@@ -1,9 +1,5 @@
 <script setup>
 
-definePageMeta({
-  middleware: 'notfound',
-})
-
 </script>
 
 <template>

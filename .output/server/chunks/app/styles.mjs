@@ -1,6 +1,6 @@
 const interopDefault = r => r.default || r || [];
 const styles = {
-  "node_modules/nuxt/dist/app/entry.js": () => import('./_nuxt/entry-styles.d58822c4.mjs').then(interopDefault),
+  "node_modules/nuxt/dist/app/entry.js": () => import('./_nuxt/entry-styles.963d4357.mjs').then(interopDefault),
   "pages/cart.vue": () => import('./_nuxt/cart-styles.a20f055f.mjs').then(interopDefault),
   "pages/checkout.vue": () => import('./_nuxt/checkout-styles.04cf0aa3.mjs').then(interopDefault),
   "pages/collection/[collection].vue": () => import('./_nuxt/_collection_-styles.f26e5a1a.mjs').then(interopDefault),

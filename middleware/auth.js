@@ -9,9 +9,9 @@ const formStore = useFormStore();
 export default defineNuxtRouteMiddleware( (to, from) => {
     
     const token = useToken();
-    const route = useRoute();
+    console.log(token.value);
     if(!token.value) {
         formStore.toggleForm();
-        return navigateTo({path: '/'});
+        return navigateTo('/');
     }
 })

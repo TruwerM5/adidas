@@ -19,7 +19,7 @@ export default defineEventHandler( async (evt) => {
         setCookie(evt, 'token', token, { maxAge: 7200 });
         return { user };
     } catch(e) {
-        console.log(e.message);
+        console.log('Error', e.message);
     }
     
 })

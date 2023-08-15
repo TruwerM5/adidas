@@ -2,10 +2,16 @@ import User from "../models/user";
 
 export default defineEventHandler(async (evt) => {
     const email = await readBody(evt);
-    const userExists = await User.findOne({ email });
-    if(userExists) {
-        return { exists: true };
-    } else {
-        return { exists: false };
+    console.log(email);
+    try {
+        const userExists = await User.findOne({ email });
+        if(userExists) {
+            return { exists: true };
+        } else {
+            return { exists: false };
+        }
+    } catch(e) {
+        console.log('Error', e.message);
     }
+    
 })

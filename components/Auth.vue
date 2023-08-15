@@ -6,26 +6,38 @@ const formStore = useFormStore();
 const userStore = useUserStore();
 
 async function authProcess() {
-    if(!formStore.validateLogin(formStore.email)) {
-        return
-    }
+    // if(!formStore.validateLogin(formStore.email)) {
+    //     return
+    // }
         
-    
-    const headers = {'Content-Type': 'application/json'};
 
+    const headers = {'Content-Type': 'application/json'};
     await $fetch('/api/users', {
         method: 'POST',
         body: formStore.email,
-        headers
-    })
-    .then(res => {
+        headers: headers,
+    }).then(res => {
         if(res.exists) {
             formStore.currentForm = 'login';
         } else {
             formStore.currentForm = 'signup';
         }
+    }).catch((e) => {
+        console.log(e.message);
     });
-    
+    // await $fetch('/api/users/', {
+    //     method: 'POST',
+    //     body: formStore.email,
+    //     headers
+    // })
+    // .then(res => {
+    //     if(res.exists) {
+    //         formStore.currentForm = 'login';
+    //     } else {
+    //         formStore.currentForm = 'signup';
+    //     }
+    // });
+
 }
 
 async function signUpProcess() {
@@ -82,7 +94,7 @@ async function login() {
                         <label for="email" class="auth__label">Enter your email to access or create your account</label>
                         <div class="auth__input-group">
                             <input 
-                            type="email" 
+                            type="text" 
                             name="email" 
                             class="auth__input" 
                             v-model="formStore.email"
