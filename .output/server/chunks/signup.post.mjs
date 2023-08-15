@@ -12,6 +12,7 @@ import 'ofetch';
 import 'unenv/runtime/fetch/index';
 import 'hookable';
 import 'scule';
+import 'klona';
 import 'defu';
 import 'ohash';
 import 'ufo';
@@ -20,6 +21,7 @@ import 'radix3';
 import 'node:fs';
 import 'node:url';
 import 'pathe';
+import 'http-graceful-shutdown';
 
 const config = useRuntimeConfig();
 const signup_post = defineEventHandler(async (evt) => {

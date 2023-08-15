@@ -9,21 +9,21 @@ const client_manifest = {
     "file": "ProductItem.f74d0488.css",
     "src": "ProductItem.css"
   },
-  "_AddToWishlistBtn.bdfbb817.js": {
+  "_AddToWishlistBtn.57f58a00.js": {
     "resourceType": "script",
     "module": true,
-    "file": "AddToWishlistBtn.bdfbb817.js",
+    "file": "AddToWishlistBtn.57f58a00.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_Loading.12de87f5.js": {
+  "_Loading.2fdba726.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "Loading.397bfd7d.css"
     ],
-    "file": "Loading.12de87f5.js",
+    "file": "Loading.2fdba726.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -32,15 +32,15 @@ const client_manifest = {
     "file": "Loading.397bfd7d.css",
     "resourceType": "style"
   },
-  "_ProductItem.7b71bb86.js": {
+  "_ProductItem.d0855544.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "ProductItem.f74d0488.css"
     ],
-    "file": "ProductItem.7b71bb86.js",
+    "file": "ProductItem.d0855544.js",
     "imports": [
-      "_AddToWishlistBtn.bdfbb817.js",
+      "_AddToWishlistBtn.57f58a00.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -48,13 +48,13 @@ const client_manifest = {
     "file": "ProductItem.f74d0488.css",
     "resourceType": "style"
   },
-  "_joinclub.188b4cad.js": {
+  "_joinclub.e8db591c.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "joinclub.ca3395f7.css"
     ],
-    "file": "joinclub.188b4cad.js",
+    "file": "joinclub.e8db591c.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -63,15 +63,15 @@ const client_manifest = {
     "file": "joinclub.ca3395f7.css",
     "resourceType": "style"
   },
-  "_products.2b5bedce.js": {
+  "_products.93358499.js": {
     "resourceType": "script",
     "module": true,
     "css": [
       "products.a8792eb5.css"
     ],
-    "file": "products.2b5bedce.js",
+    "file": "products.93358499.js",
     "imports": [
-      "_ProductItem.7b71bb86.js",
+      "_ProductItem.d0855544.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -111,7 +111,7 @@ const client_manifest = {
   "middleware/auth.js": {
     "resourceType": "script",
     "module": true,
-    "file": "auth.8d499a7e.js",
+    "file": "auth.78b96b66.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -121,7 +121,7 @@ const client_manifest = {
   "middleware/notfound.js": {
     "resourceType": "script",
     "module": true,
-    "file": "notfound.712ea654.js",
+    "file": "notfound.da5a04e3.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -130,53 +130,27 @@ const client_manifest = {
   },
   "node_modules/nuxt/dist/app/entry.css": {
     "resourceType": "style",
-    "file": "entry.469246b3.css",
+    "file": "entry.1bd63e7f.css",
     "src": "node_modules/nuxt/dist/app/entry.css"
   },
   "node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
-    "assets": [
-      "AdihausDIN-Regular.600e1655.woff2",
-      "AdihausDIN-Bold.d76fde93.woff2",
-      "adineuePRO-Bold.b095434a.woff2",
-      "AdihausDIN-CnMediumItalic.32f5207c.woff2"
-    ],
     "css": [
-      "entry.469246b3.css"
+      "entry.1bd63e7f.css"
     ],
     "dynamicImports": [
       "middleware/auth.js",
-      "middleware/notfound.js",
-      "virtual:nuxt:/home/kali/Documents/projects/Adidas/.nuxt/error-component.mjs"
+      "middleware/notfound.js"
     ],
-    "file": "entry.4b723449.js",
+    "file": "entry.9293db5a.js",
     "isEntry": true,
-    "src": "node_modules/nuxt/dist/app/entry.js"
+    "src": "node_modules/nuxt/dist/app/entry.js",
+    "_globalCSS": true
   },
-  "entry.469246b3.css": {
-    "file": "entry.469246b3.css",
+  "entry.1bd63e7f.css": {
+    "file": "entry.1bd63e7f.css",
     "resourceType": "style"
-  },
-  "AdihausDIN-Regular.600e1655.woff2": {
-    "file": "AdihausDIN-Regular.600e1655.woff2",
-    "resourceType": "font",
-    "mimeType": "font/woff2"
-  },
-  "AdihausDIN-Bold.d76fde93.woff2": {
-    "file": "AdihausDIN-Bold.d76fde93.woff2",
-    "resourceType": "font",
-    "mimeType": "font/woff2"
-  },
-  "adineuePRO-Bold.b095434a.woff2": {
-    "file": "adineuePRO-Bold.b095434a.woff2",
-    "resourceType": "font",
-    "mimeType": "font/woff2"
-  },
-  "AdihausDIN-CnMediumItalic.32f5207c.woff2": {
-    "file": "AdihausDIN-CnMediumItalic.32f5207c.woff2",
-    "resourceType": "font",
-    "mimeType": "font/woff2"
   },
   "pages/cart.css": {
     "resourceType": "style",
@@ -186,12 +160,10 @@ const client_manifest = {
   "pages/cart.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [
-      "cart.fbc2a927.css"
-    ],
-    "file": "cart.15e5c3eb.js",
+    "css": [],
+    "file": "cart.49c78b4c.js",
     "imports": [
-      "_Loading.12de87f5.js",
+      "_Loading.2fdba726.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -210,7 +182,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "checkout.60f7ccfd.js",
+    "file": "checkout.c990fae2.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -230,12 +202,12 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "_collection_.ad118116.js",
+    "file": "_collection_.c05e5b8e.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_products.2b5bedce.js",
-      "_ProductItem.7b71bb86.js",
-      "_AddToWishlistBtn.bdfbb817.js"
+      "_products.93358499.js",
+      "_ProductItem.d0855544.js",
+      "_AddToWishlistBtn.57f58a00.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/collection/[collection].vue"
@@ -246,39 +218,37 @@ const client_manifest = {
   },
   "pages/index.css": {
     "resourceType": "style",
-    "file": "index.bc29fff5.css",
+    "file": "index.db3171f2.css",
     "src": "pages/index.css"
   },
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [
-      "index.bc29fff5.css"
-    ],
-    "file": "index.0e86a984.js",
+    "css": [],
+    "file": "index.d379be24.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_ProductItem.7b71bb86.js",
-      "_joinclub.188b4cad.js",
-      "_AddToWishlistBtn.bdfbb817.js"
+      "_ProductItem.d0855544.js",
+      "_joinclub.e8db591c.js",
+      "_AddToWishlistBtn.57f58a00.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
   },
-  "index.bc29fff5.css": {
-    "file": "index.bc29fff5.css",
+  "index.db3171f2.css": {
+    "file": "index.db3171f2.css",
     "resourceType": "style"
   },
   "pages/men.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "men.9b4a401c.js",
+    "file": "men.a430fd6f.js",
     "imports": [
-      "_Loading.12de87f5.js",
-      "_products.2b5bedce.js",
+      "_Loading.2fdba726.js",
+      "_products.93358499.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_ProductItem.7b71bb86.js",
-      "_AddToWishlistBtn.bdfbb817.js"
+      "_ProductItem.d0855544.js",
+      "_AddToWishlistBtn.57f58a00.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/men.vue"
@@ -292,12 +262,12 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "_name_.af92976f.js",
+    "file": "_name_.892326e7.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_products.2b5bedce.js",
-      "_ProductItem.7b71bb86.js",
-      "_AddToWishlistBtn.bdfbb817.js"
+      "_products.93358499.js",
+      "_ProductItem.d0855544.js",
+      "_AddToWishlistBtn.57f58a00.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/popular/[name].vue"
@@ -308,36 +278,36 @@ const client_manifest = {
   },
   "pages/products/[code].css": {
     "resourceType": "style",
-    "file": "_code_.3f943f5b.css",
+    "file": "_code_.518e8445.css",
     "src": "pages/products/[code].css"
   },
   "pages/products/[code].vue": {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "_code_.3a3bfdfb.js",
+    "file": "_code_.fd2fbb84.js",
     "imports": [
-      "_Loading.12de87f5.js",
+      "_Loading.2fdba726.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_AddToWishlistBtn.bdfbb817.js",
-      "_joinclub.188b4cad.js"
+      "_AddToWishlistBtn.57f58a00.js",
+      "_joinclub.e8db591c.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/products/[code].vue"
   },
-  "_code_.3f943f5b.css": {
-    "file": "_code_.3f943f5b.css",
+  "_code_.518e8445.css": {
+    "file": "_code_.518e8445.css",
     "resourceType": "style"
   },
   "pages/wishlist.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "wishlist.ac638144.js",
+    "file": "wishlist.7dfcd639.js",
     "imports": [
-      "_products.2b5bedce.js",
+      "_products.93358499.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_ProductItem.7b71bb86.js",
-      "_AddToWishlistBtn.bdfbb817.js"
+      "_ProductItem.d0855544.js",
+      "_AddToWishlistBtn.57f58a00.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/wishlist.vue"
@@ -345,13 +315,13 @@ const client_manifest = {
   "pages/women.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "women.c16dd01f.js",
+    "file": "women.8c32026e.js",
     "imports": [
-      "_Loading.12de87f5.js",
-      "_products.2b5bedce.js",
+      "_Loading.2fdba726.js",
+      "_products.93358499.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_ProductItem.7b71bb86.js",
-      "_AddToWishlistBtn.bdfbb817.js"
+      "_ProductItem.d0855544.js",
+      "_AddToWishlistBtn.57f58a00.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/women.vue"
@@ -360,16 +330,6 @@ const client_manifest = {
     "resourceType": "style",
     "file": "products.a8792eb5.css",
     "src": "products.css"
-  },
-  "virtual:nuxt:/home/kali/Documents/projects/Adidas/.nuxt/error-component.mjs": {
-    "resourceType": "script",
-    "module": true,
-    "file": "error-component.20b7b2b5.js",
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
-    ],
-    "isDynamicEntry": true,
-    "src": "virtual:nuxt:/home/kali/Documents/projects/Adidas/.nuxt/error-component.mjs"
   }
 };
 

@@ -9,82 +9,91 @@
     "skipLibCheck": true,
     "strict": true,
     "allowJs": true,
+    "baseUrl": "/home/kali/Documents/projects/Adidas",
     "noEmit": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "types": [
       "node"
     ],
-    "baseUrl": "..",
     "paths": {
-      "~~": [
-        "."
-      ],
-      "~~/*": [
-        "./*"
-      ],
-      "@@": [
-        "."
-      ],
-      "@@/*": [
-        "./*"
-      ],
       "~": [
-        "."
+        "/home/kali/Documents/projects/Adidas"
       ],
       "~/*": [
-        "./*"
+        "/home/kali/Documents/projects/Adidas/*"
       ],
       "@": [
-        "."
+        "/home/kali/Documents/projects/Adidas"
       ],
       "@/*": [
-        "./*"
+        "/home/kali/Documents/projects/Adidas/*"
+      ],
+      "~~": [
+        "/home/kali/Documents/projects/Adidas"
+      ],
+      "~~/*": [
+        "/home/kali/Documents/projects/Adidas/*"
+      ],
+      "@@": [
+        "/home/kali/Documents/projects/Adidas"
+      ],
+      "@@/*": [
+        "/home/kali/Documents/projects/Adidas/*"
       ],
       "assets": [
-        "assets"
+        "/home/kali/Documents/projects/Adidas/assets"
       ],
       "assets/*": [
-        "assets/*"
+        "/home/kali/Documents/projects/Adidas/assets/*"
       ],
       "public": [
-        "public"
+        "/home/kali/Documents/projects/Adidas/public"
       ],
       "public/*": [
-        "public/*"
+        "/home/kali/Documents/projects/Adidas/public/*"
       ],
       "#app": [
-        "node_modules/nuxt/dist/app"
+        "/home/kali/Documents/projects/Adidas/node_modules/nuxt/dist/app"
       ],
       "#app/*": [
-        "node_modules/nuxt/dist/app/*"
+        "/home/kali/Documents/projects/Adidas/node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
-        "node_modules/nuxt/dist/app/compat/vue-demi"
+        "/home/kali/Documents/projects/Adidas/node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "pinia": [
-        "node_modules/pinia/dist/pinia"
+        "/home/kali/Documents/projects/Adidas/node_modules/pinia/dist/pinia"
       ],
-      "@vueuse/head": [
-        "node_modules/@unhead/vue/dist/index"
+      "#vue-router": [
+        "/home/kali/Documents/projects/Adidas/.nuxt/vue-router"
       ],
       "#imports": [
-        ".nuxt/imports"
+        "/home/kali/Documents/projects/Adidas/.nuxt/imports"
       ],
       "#build": [
-        ".nuxt"
+        "/home/kali/Documents/projects/Adidas/.nuxt"
       ],
       "#build/*": [
-        ".nuxt/*"
+        "/home/kali/Documents/projects/Adidas/.nuxt/*"
       ],
       "#components": [
-        ".nuxt/components"
+        "/home/kali/Documents/projects/Adidas/.nuxt/components"
       ]
     }
   },
   "include": [
     "./nuxt.d.ts",
-    "../**/*"
+    "../**/*",
+    "../**/*",
+    "/home/kali/Documents/projects/Adidas",
+    "/home/kali/Documents/projects/Adidas/*",
+    "/home/kali/Documents/projects/Adidas",
+    "/home/kali/Documents/projects/Adidas/*",
+    "/home/kali/Documents/projects/Adidas",
+    "/home/kali/Documents/projects/Adidas/*",
+    "/home/kali/Documents/projects/Adidas",
+    "/home/kali/Documents/projects/Adidas/*"
   ],
   "exclude": [
     "../dist",

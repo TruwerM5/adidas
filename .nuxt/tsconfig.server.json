@@ -1,0 +1,67 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "paths": {
+      "#imports": [
+        "/home/kali/Documents/projects/Adidas/.nuxt/types/nitro-imports"
+      ],
+      "#paths": [
+        "/home/kali/Documents/projects/Adidas/node_modules/nuxt/dist/core/runtime/nitro/paths"
+      ],
+      "~": [
+        "/home/kali/Documents/projects/Adidas"
+      ],
+      "~/*": [
+        "/home/kali/Documents/projects/Adidas/*"
+      ],
+      "@": [
+        "/home/kali/Documents/projects/Adidas"
+      ],
+      "@/*": [
+        "/home/kali/Documents/projects/Adidas/*"
+      ],
+      "~~": [
+        "/home/kali/Documents/projects/Adidas"
+      ],
+      "~~/*": [
+        "/home/kali/Documents/projects/Adidas/*"
+      ],
+      "@@": [
+        "/home/kali/Documents/projects/Adidas"
+      ],
+      "@@/*": [
+        "/home/kali/Documents/projects/Adidas/*"
+      ],
+      "assets": [
+        "/home/kali/Documents/projects/Adidas/assets"
+      ],
+      "assets/*": [
+        "/home/kali/Documents/projects/Adidas/assets/*"
+      ],
+      "public": [
+        "/home/kali/Documents/projects/Adidas/public"
+      ],
+      "public/*": [
+        "/home/kali/Documents/projects/Adidas/public/*"
+      ],
+      "pinia": [
+        "/home/kali/Documents/projects/Adidas/node_modules/pinia/dist/pinia"
+      ]
+    }
+  },
+  "include": [
+    "/home/kali/Documents/projects/Adidas/.nuxt/types/nitro-nuxt.d.ts",
+    "./types/nitro.d.ts",
+    "../**/*",
+    "../server/**/*"
+  ]
+}
