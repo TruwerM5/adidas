@@ -6,37 +6,24 @@ const formStore = useFormStore();
 const userStore = useUserStore();
 
 async function authProcess() {
-    // if(!formStore.validateLogin(formStore.email)) {
-    //     return
-    // }
+    if(!formStore.validateLogin(formStore.email)) {
+        return
+    }
         
 
-    const headers = {'Content-Type': 'application/json'};
-    await $fetch('/api/users', {
-        method: 'POST',
+    const headers = {'Content-Type': 'application/json; charset=utf-8'};
+    await useAsyncData('users', () => $fetch('/api/users', {
+        headers,
         body: formStore.email,
-        headers: headers,
-    }).then(res => {
+        method: 'POST',
+    })
+    .then(res => {
         if(res.exists) {
             formStore.currentForm = 'login';
         } else {
             formStore.currentForm = 'signup';
         }
-    }).catch((e) => {
-        console.log(e.message);
-    });
-    // await $fetch('/api/users/', {
-    //     method: 'POST',
-    //     body: formStore.email,
-    //     headers
-    // })
-    // .then(res => {
-    //     if(res.exists) {
-    //         formStore.currentForm = 'login';
-    //     } else {
-    //         formStore.currentForm = 'signup';
-    //     }
-    // });
+    })) ;
 
 }
 

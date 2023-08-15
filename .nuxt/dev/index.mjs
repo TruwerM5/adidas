@@ -1089,7 +1089,6 @@ const user_get$1 = /*#__PURE__*/Object.freeze({
 
 const users_post = defineEventHandler(async (evt) => {
   const email = await readBody(evt);
-  console.log(email);
   try {
     const userExists = await User$1.findOne({ email });
     if (userExists) {
