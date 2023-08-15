@@ -1,0 +1,1 @@
+import{R as o,Q as a,S as u,L as n,U as e}from"./entry.af05fe6f.js";function s(){return o("token",()=>a("token"))}const r=n(),k=u((l,t)=>{if(!s().value)return r.toggleForm(),t.fullPath!=="/cart"||t.fullPath!=="/wishlist"?e("/"):e(t.fullPath)});export{k as default};
