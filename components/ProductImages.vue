@@ -76,7 +76,7 @@ function moveOne(direction) {
 <template>
     <div class="overlay flex justify-center">
         <button class="overlay__close-btn" @click="galleryStore.toggleGallery">
-            <img src="/images/close-icon.png" alt="Close">
+            <img src="/images/close-icon.svg" alt="Close">
         </button>
         <div 
         @touchstart="touchStart"
