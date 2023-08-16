@@ -73,7 +73,7 @@ async function removeItem() {
             </div>
         </div>
         <button class="cart-item__delete-btn self-start" @click="removeItem">
-                <img src="/images/close-icon.png" alt="Remove">
+                <img src="/images/close-icon.svg" alt="Remove">
         </button>
         <div class="cart-item__select-wrapper self-end">
             <select name="quantity" id="quantity" v-model="itemQuantity"
