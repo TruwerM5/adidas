@@ -12,7 +12,7 @@ const Form = useFormStore();
         <div class="logout">
             <button @click="Form.isLogoutOpened = false"
             class="logout__close-btn">
-                <img src="/images/close-icon.png" alt="Close">
+                <img src="/images/close-icon.svg" alt="Close">
             </button>
             <h3 class="uppercase font-bold text-[25px]">Are you sure you want logout?</h3>
             <div class="flex items-center gap-[15px] justify-between">

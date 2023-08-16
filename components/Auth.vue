@@ -69,7 +69,7 @@ async function login() {
         <div v-if="formStore.isFormOpened" class="overlay">
             <form class="auth" @submit.prevent>
                 <button class="auth__close-btn" type="button" @click="formStore.toggleForm()">
-                    <img src="/images/close-icon.png" alt="Close">
+                    <img src="/images/close-icon.svg" alt="Close">
                 </button>
                 <div class="auth__inner">
                     <template v-if="formStore.currentForm === 'email'">
