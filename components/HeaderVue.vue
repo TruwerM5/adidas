@@ -26,11 +26,15 @@ if(process.client) {
 
 <template>
     <header :class="['header', navStore.isNavbarVisible ? 'active' : '']">
-        <div class="header__top h-[45px] bg-black"></div>
+        <div class="header__top h-[45px] bg-black flex items-center justify-center">
+            <span class="header__top-text uppercase font-bold text-white text-[11px] tracking-[2px]">
+                Free standard shipping & returns
+            </span>
+        </div>
         <div class="header__bottom ">
             <nav class="navbar h-[60px] flex items-center px-[10px] lg:px-[20px]">
                 <button class="navbar__toggler mr-auto" @click="navStore.toggleNav">
-                    <img src="/images/burger.png" alt="Menu toggler button">
+                    <img src="/images/burger.svg" alt="Menu toggler button">
                 </button>
                 <NuxtLink to="/" class="mx-auto md:mx-0" @click="isNavOpened = false">
                     <img src="/images/logo.svg" alt="Adidas" class="lg:w-[65px]">
@@ -41,7 +45,7 @@ if(process.client) {
                             <img src="/images/logo.svg" alt="Adidas">
                         </NuxtLink>
                         <button class="navbar__close-btn"  @click="navStore.isNavOpened = false">
-                            <img src="/images/close-icon.png" alt="Close">
+                            <img src="/images/close-icon.svg" alt="Close">
                         </button>
                     </div>
                     <ul class="navbar__list">
@@ -65,9 +69,9 @@ if(process.client) {
                 class="header__wishlist-btn ml-[20px] relative">
                     
                     <img v-if="userStore.wishlist.length === 0"
-                    src="/images/wishlist-icon.png" alt="Wishlist" class="w-[24px]">
+                    src="/images/wishlist-icon.svg" alt="Wishlist" class="w-[24px]">
                     <template v-else>
-                        <img src="/images/wishlist-icon_filled.png" alt="Wishlist" class="w-[24px]">
+                        <img src="/images/wishlist-icon_filled.svg" alt="Wishlist" class="w-[24px]">
                         <span 
                         class="wishlist-qty absolute text-[12px] left-1/2 -top-[10px]">{{ userStore.wishlist.length }}</span>
                     </template>
@@ -77,15 +81,15 @@ if(process.client) {
                 class="header__cart-btn ml-[20px] relative">
                     <span v-if="userStore.cart.length > 0"
                     class="cart-qty absolute text-[12px] left-1/2 -top-[10px]">{{ userStore.totalQuantity }}</span>
-                    <img src="/images/cart-icon.png" alt="Cart" class="w-[24px]">
+                    <img src="/images/cart-icon.svg" alt="Cart" class="w-[24px]">
                 </NuxtLink>
                 <button class="header__search-btn ml-[20px]" @click="navStore.toggleSearch">
-                    <img src="/images/search-icon.png" alt="Search">
+                    <img src="/images/search-icon.svg" alt="Search">
                 </button>
                 <Search />
                 <button v-if="userStore.isAuthenticated"
                 class="header__logout-btn ml-[20px]" @click="formStore.isLogoutOpened = true">
-                    <img src="/images/logout-icon.png" alt="Logout" class="w-[24px]">
+                    <img src="/images/logout-icon.svg" alt="Logout" class="w-[24px]">
                 </button>
                 
                 

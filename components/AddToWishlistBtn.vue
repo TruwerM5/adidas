@@ -60,7 +60,7 @@ async function addToWishlistMiddleware(prod) {
 
 <template>
     <button class="add-to-wishlist" @click="addToWishlistMiddleware(product)">
-        <img v-if="isProdInWishlist" src="/images/wishlist-icon_filled.png" alt="Remove from wishlist">
-        <img v-else src="/images/wishlist-icon.png" alt="Add to wishlist">
+        <img v-if="isProdInWishlist" src="/images/wishlist-icon_filled.svg" alt="Remove from wishlist">
+        <img v-else src="/images/wishlist-icon.svg" alt="Add to wishlist">
     </button>  
 </template>
